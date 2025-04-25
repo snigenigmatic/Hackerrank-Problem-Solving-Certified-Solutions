@@ -94,7 +94,6 @@ int longestSubarray(int arr_count, int *arr)
 int main()
 {
     FILE *fptr = fopen(getenv("OUTPUT_PATH"), "w");
-
     int arr_count;
     scanf("%d", &arr_count);
 

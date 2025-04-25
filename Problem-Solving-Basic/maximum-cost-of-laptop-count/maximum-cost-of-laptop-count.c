@@ -28,11 +28,12 @@
  * Space Complexity: O(1) additional space (not counting input/output)
  */
 
-int maxCost(int cost_count, int *cost, char **labels, int dailyCount)
+int maxCost(int *cost, char **labels, int dailyCount)
 {
     int ans = 0;
     int cur_cnt = 0;
     int cur_cost = 0;
+    int cost_count = sizeof(cost) / sizeof(cost[0]);
 
     for (int i = 0; i < cost_count; i++)
     {
